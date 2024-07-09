@@ -67,7 +67,7 @@ jobs:
               ls "upload"                  
               
        - name: Upload GSI to release
-         uses: ncipollo/release-action@v1.8.6
+         uses: ncipollo/release-action@v1.10.0
          with:
            artifacts: ${{ github.workspace }}/ErfanGSIs/output/upload/*
            tag: ErfanGSIs-${{ env.ROM_NAME }}-${{ env.BUILD_TYPE }}-${{ env.BUILD_TIME }}
