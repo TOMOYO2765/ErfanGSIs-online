@@ -56,7 +56,7 @@ jobs:
        - name: Zip GSI  
          run: |
               cd $GITHUB_WORKSPACE/ErfanGSIs/output
-              zip -r GSI.zip . -i ./*)
+              zip -r GSI.zip -i ./*)
               mkdir upload
               if [[ $(du -sb "GSI.zip" | awk '{print $1}') -gt 2097152000 ]];then
                   echo -e "split packaging..."
