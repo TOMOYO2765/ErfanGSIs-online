@@ -33,7 +33,7 @@ jobs:
               echo "BUILD_TIME=$(date +%s | md5sum | awk '{print substr($1,1,10)}')" >> $GITHUB_ENV
            
        - name: Clone ErfanGSI Source Code
-         run: git clone --recurse-submodules https://github.com/mi20210630/ErfanGSIs.git ErfanGSIs
+         run: git clone --recurse-submodules https://github.com/TOMO2765/ErfanGSIs.git ErfanGSIs
          
        - name: Fix exit
          run: |
